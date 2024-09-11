@@ -28,6 +28,6 @@ Este projeto foi desenvolvido utilizando os conhecimentos e recursos adquiridos 
 
 https://books-dev-gkn.vercel.app
 
-## Reflexões Sobre o Projeto
+## Reflexão Sobre o Projeto
 
 Este projeto foi resultado de horas de dedicação durante a semana intensa da Imersão Dev da Alura. A imersão foi uma oportunidade fantástica para aplicar conceitos teóricos em um projeto prático, e sinto que aprendi muito em apenas uma semana. O desafio de construir uma plataforma funcional e interativa me permitiu aprimorar minhas habilidades em HTML, CSS e JavaScript.
