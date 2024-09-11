@@ -14,7 +14,7 @@ body {
     flex-direction: column; /* Organiza o layout em coluna */
     min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
     background-color: #F5F7F8; /* Cor de fundo */
-    overflow: hidden;
+    overflow-x: hidden;
  } 
 
 /* Estiliza o elemento main */
