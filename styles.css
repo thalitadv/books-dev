@@ -14,6 +14,7 @@ body {
     flex-direction: column; /* Organiza o layout em coluna */
     min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
     background-color: #F5F7F8; /* Cor de fundo */
+    overflow: hidden;
  } 
 
 /* Estiliza o elemento main */
@@ -267,7 +268,7 @@ footer a {
     position: fixed; /* Fica fixo na tela */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-    bottom: 3.9rem; /* Distância do fundo da tela */
+    bottom: 2.7rem; /* Distância do fundo da tela */
     right: 20px; /* Distância da borda direita */
     max-width: 250px; /* Largura máxima */
     max-height: 150px; /* Altura máxima */
