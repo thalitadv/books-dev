@@ -8,8 +8,8 @@ Este projeto foi desenvolvido utilizando os conhecimentos e recursos adquiridos 
 
 ## Tecnologias Utilizadas
 
-- **HTML5**: Estrutura e conteúdo básico do site, garantindo uma base sólida para a aplicação.
-- **CSS3**: Estilização e design visual, proporcionando uma interface agradável e responsiva para os usuários.
+- **HTML**: Estrutura e conteúdo básico do site, garantindo uma base sólida para a aplicação.
+- **CSS**: Estilização e design visual, proporcionando uma interface agradável e responsiva para os usuários.
 - **JavaScript**: Implementação de funcionalidades interativas, como a barra de pesquisa dinâmica e a navegação entre páginas de detalhes.
 
 ## Funcionalidades
