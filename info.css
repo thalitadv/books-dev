@@ -1,0 +1,191 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Para todos os elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Fonte utilizada na página */
+    background-color: #F5F7F8; /* Cor de fundo */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-image: linear-gradient(#0d111a, #000000); /* Gradiente de fundo */
+    position: relative; /* Posicionamento relativo para o cabeçalho */
+    height: 150px; /* Altura fixa */
+    display: flex; /* Flexbox para centralização */
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Cor do texto */
+    text-align: center;
+}
+
+/* Estilização do título dentro do cabeçalho */
+header h1 {
+    font-size: 2.5em; /* Tamanho da fonte */
+}
+
+/* Estilização para a parte destacada do título */
+.scan-cor { 
+    color: #9f9fee; /* Cor destacada */
+}
+
+/* Estilização do main para centralizar o conteúdo e permitir rolagem */
+main {
+    display: flex; 
+    justify-content: center; /* Alinha os itens horizontalmente no centro*/
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 2rem; /* Adiciona um espaçamento interno de 2rem ao redor do conteúdo*/
+    margin: 0 auto; 
+    overflow: auto; /* Adiciona barras de rolagem se o conteúdo ultrapassar seu tamanho*/
+}
+
+/* Estilização do bloco de conteúdo */
+.conteudo {
+    width: 100%;
+    max-width: calc(100vw - 100px); /* Largura máxima */
+    margin: 3rem; /* Centraliza horizontalmente */
+    padding: 20px;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar o conteúdo */
+    background-color: #ffffff; /* Cor de fundo branca para o conteúdo */
+}
+
+/* Estilização do bloco de conteúdo da imagem */
+.imagem-conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Permite a quebra de linha para telas menores */
+    align-items: center;
+    gap: 20px; /* Espaço entre o círculo e o texto */
+    margin-bottom: 20px; /* Espaço abaixo do container */
+}
+
+/* Estilização do círculo */
+.circulo {
+    width: 350px;
+    height: 350px;
+    background-color: #061130; /* Cor de fundo */
+    border-radius: 50%; /* Forma circular */
+    display: flex; /* Flexbox para centralizar o quadrado */
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Posicionamento relativo para ajustes */
+}
+
+/* Estilização do quadrado dentro do círculo */
+.quadrado {
+    width: 200px; /* Largura fixa */
+    height: 250px; /* Altura fixa */
+    background-color: #ffffff; /* Cor de fundo */
+    display: flex; /* Flexbox para centralizar a imagem */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000; /* Borda ao redor do quadrado */
+}
+
+/* Estilização da imagem dentro do quadrado */
+.imagem img {
+    width: 150px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
+}
+
+.titulo { 
+    flex: 1;
+}
+
+/* Estilização do título dentro do bloco de texto */
+.titulo h2 {
+    color: #000000; /* Cor do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Estilização dos parágrafos dentro do bloco de texto */
+.titulo p {
+    font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
+}
+
+/* Estilização dos parágrafos dentro do bloco de texto */
+.descricao {
+    font-size: 1.3rem; /* Tamanho da fonte dos parágrafos */
+}
+
+/* Estilização do autor do livro */
+#livro-autor { 
+    font-size: large; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #061130; /* Cor do texto */
+}
+
+/* Estilização do botão de voltar */
+button { 
+    display: block;
+    padding: 15px 25px; /* Espaçamento interno do botão */
+    margin: 20px auto;
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+    border: none; /* Remove a borda padrão */
+    background-color: #061130; /* Cor de fundo do botão */
+    justify-content: center;
+    align-items: center;
+    bottom: 2rem; /* Espaço do botão até o fundo da tela */
+    left: 50%; /* Alinha o botão horizontalmente no centro */
+    border-radius: 1.5rem; /* Bordas arredondadas */
+    margin-top: 20px; /* Espaço acima do botão */
+    color: #fff; /* Cor do texto */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Estilização do botão ao passar o mouse */
+button:hover { 
+    background-color: #8da0d6; /* Cor de fundo ao passar o mouse */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .circulo {
+        width: 300px; /* Reduz a largura do círculo */
+        height: 300px; /* Reduz a altura do círculo */
+    }
+
+    .quadrado {
+        width: 150px; /* Reduz a largura do quadrado */
+        height: 200px; /* Reduz a altura do quadrado */
+    }
+
+    .imagem img {
+        width: 120px; /* Reduz a largura da imagem */
+        height: 160px; /* Reduz a altura da imagem */
+    }
+
+    .descricao {
+        margin-top: 10px; /* Reduz o espaço acima do bloco de descrição */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .circulo {
+        width: 250px; /* Reduz ainda mais a largura do círculo */
+        height: 250px; /* Reduz ainda mais a altura do círculo */
+    }
+
+    .quadrado {
+        width: 120px; /* Reduz ainda mais a largura do quadrado */
+        height: 160px; /* Reduz ainda mais a altura do quadrado */
+    }
+
+    .imagem img {
+        width: 100px; /* Reduz ainda mais a largura da imagem */
+        height: 130px; /* Reduz ainda mais a altura da imagem */
+    }
+
+    button {
+        width: 120px; /* Reduz a largura do botão */
+        font-size: 0.9em; /* Reduz o tamanho da fonte do botão */
+    }
+}

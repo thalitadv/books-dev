@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LiteraturaDev</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-fundo">
+                <img src="./freepik-livro1.png" class="header-imagem">
+                <h1>Literatura<scan class="scan-cor">Dev</scan></h1>
+                <div class="input-button">
+                    <input type="text" placeholder="Pesquise por categoria ou linguagem" id="campo-pesquisa">
+                    <button onclick="pesquisar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+        </div>
+                <div class="header-imagem-frase">
+                    <h4 class="header-frase">Explorando o Mundo da Programação: <br>
+                        <scan class="scan-cor">Livros para Quem Está Começando</scan></h4>
+                    <img src="./freepik-livro2.png" class="header-imagem-dois">
+                </div>
+    </header>
+    <main>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <div class="item-resultado">
+                <a href="info.html?id=1">
+                    <img src="https://m.media-amazon.com/images/I/613-pa+n7cL._AC_UF1000,1000_QL80_.jpg" class="imagem-resultado" alt="14 hábitos de desenvolvedores altamente produtivos">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>14 hábitos de desenvolvedores</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=2">
+                    <img src="https://regys.com.br/wp-content/uploads/2021/10/LIvroCSharpCapa.png" class="imagem-resultado" alt="C# para Iniciantes">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>C# para Iniciantes</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=3">
+                    <img src="https://m.media-amazon.com/images/I/51E2055ZGUL._AC_UF894,1000_QL80_.jpg" class="imagem-resultado" alt="Código Limpo">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Código Limpo</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=4">
+                    <img src="https://m.media-amazon.com/images/I/71+zivhMZKL._AC_UF1000,1000_QL80_.jpg" class="imagem-resultado" alt="Curso Intensivo de Python">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Curso Intensivo de Python</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=5">
+                    <img src="https://m.media-amazon.com/images/I/71Vkg7GfPFL._AC_UF1000,1000_QL80_.jpg" class="imagem-resultado" alt="Entendendo algoritmos">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Entendendo algoritmos</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=6">
+                    <img src="https://m.media-amazon.com/images/I/41cyu+Z3TEL._SY580_.jpg" class="imagem-resultado" alt="Guia Front-End">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Guia Front-End</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=7">
+                    <img src="https://m.media-amazon.com/images/I/31o1jSCehiL._SY580_.jpg" class="imagem-resultado" alt="Guia Prático: HTML & CSS">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Guia Prático: HTML & CSS</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=8">
+                    <img src="https://m.media-amazon.com/images/I/41+axHNoWBL._SY580_.jpg" class="imagem-resultado" alt="HTML5 e CSS3: Domine a web do futuro">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>HTML5 e CSS3: Domine a web do futuro</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=9">
+                    <img src="https://m.media-amazon.com/images/I/711siL1zU1L._AC_UF1000,1000_QL80_.jpg" class="imagem-resultado" alt="Introdução à Linguagem SQL">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Introdução à Linguagem SQL</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=10">
+                    <img src="https://m.media-amazon.com/images/I/41NPr-88NFL._SY580_.jpg" class="imagem-resultado" alt="Java para iniciantes">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Java para iniciantes</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=11">
+                    <img src="https://m.media-amazon.com/images/I/41RsYqkciqL._SY580_.jpg" class="imagem-resultado" alt="Lógica de Programação: Crie seus primeiros programas usando JavaScript e HTML">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Lógica de Programação: JavaScript e HTML</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=12">
+                    <img src="https://m.media-amazon.com/images/I/41NiWHgP+dL._SY580_.jpg" class="imagem-resultado" alt="Lógica de programação em portugol">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Lógica de programação em portugol</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=13">
+                    <img src="https://m.media-amazon.com/images/I/41WH7HFsbzL.jpg" class="imagem-resultado" alt="O programador pragmático">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>O programador pragmático</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=14">
+                    <img src="https://m.media-amazon.com/images/I/81Y8qOS33-L._AC_UF894,1000_QL80_.jpg" class="imagem-resultado" alt="Programação Funcional para Leigos">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Programação funcional para leigos</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=15">
+                    <img src="https://www.casadocodigo.com.br/cdn/shop/products/Scratch_ebook_large.jpg?v=1631650184" class="imagem-resultado" alt="Scratch">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Scratch</h3>
+            </div>
+            <div class="item-resultado">
+                <a href="info.html?id=16">
+                    <img src="https://m.media-amazon.com/images/I/61jzaHuWFLL._AC_UF894,1000_QL80_.jpg" class="imagem-resultado" alt="Use a cabeça! Java">
+                    <div class="info-block">Mais informações</div>
+                </a>
+                <h3>Use a cabeça! Java</h3>
+            </div>
+        </section>
+    </main>
+    <img src="./freepikleitura.png" class="imagem">
+    <footer>
+        <p>&copy; LiteraturaDev. Todos os direitos reservados. <br>
+                    <a href="https://www.freepik.com/search">Icon by Freepik</a>
+                </p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    </body>
+    </html>
+    

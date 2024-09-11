@@ -1,0 +1,393 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Para todos os elementos*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estiliza o corpo da página */
+body {
+    display: flex;
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    flex-direction: column; /* Organiza o layout em coluna */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+    background-color: #F5F7F8; /* Cor de fundo */
+ } 
+
+/* Estiliza o elemento main */
+ main {
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+} 
+
+/* Estiliza o cabeçalho */
+header {
+    display: flex;
+    position: relative;
+    height: 200px;/* Altura do cabeçalho */
+    width: 100%; /* Largura total do header */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    padding: 0; /* Remove padding para encostar nas margens */
+    margin: 0; /* Remove a margem */
+}
+
+/* Estiliza o fundo do cabeçalho */
+.header-fundo {
+    display: flex;
+    height: 100%;
+    width: 100%; /* Ocupa toda a largura do header */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    position: absolute; /* Posiciona no fundo do header */
+    top: 0;
+    left: 0;
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding na largura e altura */
+    background-image: linear-gradient(#0d111a, #000000);
+}
+
+/* Estiliza o título h1 */
+ h1 {
+    font-size: 2.8em; /* Tamanho do título */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra do texto */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.scan-cor { 
+    color:#9f9fee; /* Cor destacada no título */
+}
+
+/* Estiliza a imagem no cabeçalho */
+.header-imagem {
+    margin-bottom: 0;  /* Remove a margem inferior */
+    max-width: 45px; /* Define a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.header-imagem-frase {
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: row; /* Imagem e frase ao lado */
+    align-items: center; /* Alinha a imagem e a frase verticalmente */
+    justify-content: center; /* Alinha horizontalmente */ 
+    margin-top: 0; /* Remove margem superior */
+    left: 80%; /* Alinha a esquerda */
+    z-index: 100; /* Garante que fique sobre outros elementos */
+}
+
+
+.header-imagem-dois {
+    max-width: 300px; /* Largura máxima */
+    max-height: 200px; /* Altura máxima */
+    display: block; /* Garante que a imagem seja exibida */
+
+}
+
+/* Estiliza a frase no cabeçalho */
+.header-frase {
+    width: 50%; /* Largura da frase */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    margin: -40px; /* Remove a margem para alinhamento correto */ 
+}
+
+/* Estiliza o container de input e botão */
+.input-button {
+    display: flex; /* Usa Flexbox para layout */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: right; /* Alinha o conteúdo à direita */
+    left: 0;
+    height: 80px;
+    margin: 0;
+    padding: 0 2rem; /* Espaçamento interno */
+}
+
+/* Estiliza os campos de input */
+input {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%;
+    height: 3rem; /* Altura do campo de pesquisa */
+    padding: 1rem; /* Espaçamento interno */
+    width: 350px; /* Largura fixa */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem 0 0 1.5rem; /* Borda arredondada */
+    outline: none; /* Remove o contorno padrão */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transição suave para borda e sombra */
+}
+
+
+/* Estiliza os botões */
+button {
+    height: 3rem; /* Altura do botão */
+    padding: 1rem; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 0 1.5rem 1.5rem 0; /* Borda arredondada */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    color: #000000; /* Cor do texto */
+    background-color: #9f9fee; /* Cor de fundo */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+button:hover {
+    background-color: #555594; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+
+/* Estiliza as seções da página */
+section {
+    position: relative;
+    display: grid; /* Usa grid layout */
+    flex-direction: row; /* Alinha itens na vertical */
+    margin-bottom: 3rem; /* Espaço abaixo da seção */
+    align-items: center; /* Alinha itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas */
+    gap: 15px; /* Espaçamento entre itens */
+    max-width: 900px; /* Largura máxima */
+    width: 100%; /* Largura total */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    display: flex;
+    position: relative;
+    min-width: 200px; /* Largura mínima */
+    min-height: 250px; /* Altura mínima */
+    max-width: 200px; /* Largura máxima */
+    max-height: 250px; /* Altura máxima */
+    flex-direction: column; /* Alinha itens na vertical */
+    border-radius: 0.6rem; /* Bordas arredondadas */
+    padding: 1rem; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    align-items: center; /* Alinha itens horizontalmente */
+    overflow: hidden; /* Oculta conteúdo que ultrapassa o limite do item */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para transformação e sombra */
+    background: #FFFFFF; /* Cor de fundo */
+    justify-content: space-evenly; /* Distribui o espaço igualmente entre os itens */
+}
+
+
+.item-resultado a {
+    color: #000; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+
+}
+
+/* Adiciona efeito hover aos itens de resultado */
+.item-resultado:hover {
+    transform: translateY(-8px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Estiliza o bloco de informações dentro dos itens de resultado */
+.info-block {
+    position: absolute;
+    bottom: 0; /* Posiciona no fundo do item */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total do bloco */
+    background: #061130; /* Cor de fundo */
+    color: #FFFFFF; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 25px; /* Espaçamento interno */
+    transform: translateY(100%); /* Inicialmente escondido abaixo do item */
+    transition: transform 0.3s ease; /* Transição suave ao revelar */
+}
+
+/* Estiliza os botões dentro do bloco de informações */
+.info-block button { 
+    background-color: #061130; /* Cor de fundo do botão */
+    color: #FFFFFF; /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Adiciona efeito hover ao bloco de informações */
+.item-resultado:hover .info-block {
+    transform: translateY(0); /* Revela o bloco ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-resultado h3 {
+    color: #222831; /* Cor do texto */
+    margin: 0; /* Margem acima e abaixo */
+    font-size: 5px; /* Tamanho da fonte */
+}
+
+.descricao-resultado p {
+    font-size: 0.9em; /* Tamanho reduzido do texto */
+    color: #666; /* Cor do texto */
+    margin-bottom: 5px; /* Espaço abaixo do parágrafo */
+}
+
+/* Estiliza a imagem dentro dos itens de resultado */
+.imagem-resultado {
+    width: 100px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background: #e4e4f1; /* Cor de fundo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    position: fixed; /* Fica fixo na parte inferior da tela */
+    bottom: 0; /* Distância do fundo da tela */
+    left: 0;
+    right: 0;
+    text-align: center; /* Centraliza o texto */
+    padding-top: 0.2rem; /* Espaçamento interno superior */
+}
+
+/* Estiliza o texto do rodapé */
+footer p {
+    margin: 0; /* Remove margem */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Estiliza os links dentro do rodapé */
+footer a {
+    color: #000000; /* Cor do link */
+}
+
+/* Estiliza a imagem fixa */
+.imagem {
+    display: flex;
+    position: fixed; /* Fica fixo na tela */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    bottom: 3.9rem; /* Distância do fundo da tela */
+    right: 20px; /* Distância da borda direita */
+    max-width: 250px; /* Largura máxima */
+    max-height: 150px; /* Altura máxima */
+}
+
+.sem-resultado {
+    position: absolute; /* Posiciona a mensagem de forma absoluta dentro do contêiner */
+    top: 50%; /* Move a mensagem para 50% da altura do contêiner */
+    left: 50%; /* Move a mensagem para 50% da largura do contêiner */
+    transform: translate(-50%, -50%); /* Ajusta a posição para que a mensagem fique centralizada */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 100%; /* Garante que a mensagem tenha a largura total do contêiner */
+    margin: 0; /* Remove margens para garantir o alinhamento */
+    font-size: 1.2em; /* Ajuste o tamanho da fonte, se necessário */
+    color: #333; /* Define a cor do texto */
+}
+/* Media Queries para responsividade */
+/* Tela maior que 1700px */
+@media (max-width: 1700px) {
+    .header-imagem-frase {
+        display: none; /* Oculta a imagem e frase em telas menores */
+    }
+}
+
+/* Tela menor que 1280px */
+@media (max-width: 1280px) {
+    .imagem {
+        display: none; /* Oculta a imagem em telas menores */
+    }
+}
+
+/* Tela menor que 880px */
+@media (max-width: 880px) {
+    section {
+        grid-template-columns: repeat(3, 1fr); /* Ajusta para 3 colunas */
+        margin-bottom: 5rem; /* Espaço abaixo da seção */
+    }
+}
+
+/* Tela menor que 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte reduzido */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras */
+    }
+
+    input {
+        width: 25rem; /* Largura reduzida dos inputs */
+        padding: 0.8rem; /* Espaçamento interno reduzido */
+    }
+    
+    button {
+        padding: 0.6rem 1rem; /* Espaçamento interno reduzido */
+        font-size: 0.9rem; /* Tamanho da fonte reduzido */
+    }
+
+    section {
+        grid-template-columns: repeat(3, 1fr); /* Ajusta para 3 colunas */
+        margin-bottom: 80rem; /* Espaço abaixo da seção */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura ajustada */
+        height: 40vh; /* Altura ajustada */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos reduzido */
+    }
+
+    .imagem {
+        display: none; /* Oculta a imagem */
+    }
+}
+
+/* Tela menor que 630px */
+@media (max-width: 630px) {
+    section {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+        max-width: 50%; /* Largura máxima */
+        margin-bottom: 110rem; /* Espaço abaixo da seção */
+    }
+
+    input {
+        font-size: 0.9rem
+    }
+}
+
+/* Tela menor que 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte reduzido */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras */
+    }
+
+    input {
+        width: 17rem; /* Largura dos inputs ajustada */
+        font-size: 0.7rem
+    }
+
+    button {
+        padding: 0.6rem 1rem; /* Espaçamento interno reduzido */
+        font-size: 0.9rem; /* Tamanho da fonte reduzido */
+    }
+
+    section {
+        grid-template-columns: 1fr; /* Ajusta para 1 coluna */
+        max-width: 50%; /* Largura máxima */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura ajustada */
+        height: 50vh; /* Altura ajustada */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos ajustado */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte reduzido */
+    }
+}
