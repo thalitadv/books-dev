@@ -26,7 +26,7 @@ Este projeto foi desenvolvido utilizando os conhecimentos e recursos adquiridos 
 
 ## Link
 
-https://books-dev-ten.vercel.app
+https://books-dev-gkn.vercel.app
 
 ## Reflexões Sobre o Projeto
 
